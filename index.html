@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charixy</title>
+    <link rel="icon" href="./img/logotitle.png">
+    <!-- google-font -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <img class="logo" src="./img/logo.png" alt="Charixy">
+            </div>
+            <ul class="navlist" id="navlist">
+                <li class="listitems">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="listitems">
+                    <a href="./about.html">About</a>
+                </li>
+                <li class="listitems">
+                    <a href="./donate.html">Donate</a>
+                </li>
+                <li class="listitems">
+                    <a href="./contact.html">Contact us</a>
+                </li>
+            </ul>
+            <div class="menu" id="togglebutton">
+                <div class="menuline"></div>
+                <div class="menuline"></div>
+                <div class="menuline"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="carouselSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/img1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class=" animate__animated animate__fadeInDown" style="animation-delay: 1s;"> GIVE A LITTLE, HELP A LOT</h5> 
+                    <p class="animate__animated animate__fadeInUp" style="animation-delay: 2s;">Your small donation can transform their lives. </p>
+                    <span class="animate__animated animate__bounce" style="animation-delay: 3s;"><a href="./donate.html">Donate Now</a></span> 
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/img2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animate__animated animate__fadeInLeft" style="animation-delay: 1s;">TAKE THE HAND OF A CHILD IN NEED</h5>
+                    <p class="animate__animated animate__fadeInRight" style="animation-delay :2s;">Your small gift will help us create sustainable and ever lasting impact for children, families and the entire communities.</p>
+                   <span><a href="./donate.html">Donate Now</a></span> 
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/img3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class=" animate__animated animate__zoomIn" style="animation-delay: 1s;">It takes YOU to make HOPE possible.</h5>
+                    <p class=" animate__animated animate__fadeInUpBig " style="animation-delay: 2s;">Your support is powerful. <br>Change the lives of children living in poverty. </p>
+                    <span><a href="./donate.html">Donate Now</a></span> 
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Content for Responsive design  -->
+    <div class="caption-responsive">
+        <h5 class=" animate__animated animate__fadeInDown" style="animation-delay: 1s;"> GIVE A LITTLE, HELP A LOT</h5> 
+        <p class=" animate__animated animate__fadeInUpBig" style="animation-delay: 2s;">Your small donation can transform their lives. </p>
+        <span><a href="./donate.html">Donate Now</a></span> 
+    </div>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/india.savethechildren"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/savethechildren_india/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/stc_india"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="copyright">
+            Copyright &copy;
+            <script> document.write(new Date().getFullYear());</script>  Charixy Organization - All rights reserved
+        </p>
+    </footer>
+</body>
+
+<script src="./js/nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+
+</html>

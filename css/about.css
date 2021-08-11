@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Baloo Bhai 2', cursive; 
+}
+ 
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 18px;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    background-color: #000000ab; 
+}
+.navlist{
+    margin-bottom: 0rem;
+    
+}
+.navlist .listitems{
+    list-style-type: none;
+    display:inline-block ;
+    padding: 0px 20px;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 0px 12px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+.navbar a:hover{
+    color: rgb(10, 127, 196);
+    background-color: #fff;
+}
+.logo{
+    height: 65px;
+}
+.menu{
+    display: none;
+}
+.menuline{
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+
+/* Main Section of About */
+body{
+    background-image:linear-gradient(rgba(10, 8, 8, 0.356),rgba(10, 8, 8, 0.338)), url("../img/img8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:fit-content ;
+    width: 100%;
+   --load-time:300ms;
+} 
+.section{
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float:right;
+    width: 40%;
+    animation: zoom-in var(--load-time) ease-in;
+    animation-delay: 5s ;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+    animation: move-down var(--load-time) ease-in;
+    animation-delay: 1s ;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color: #2c2626;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.007em;
+    animation: move-down var(--load-time) ease-in;
+    animation-delay: 2s ;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 0.023em;
+    font-size: 16px;
+    line-height: 1.6;
+    animation: move-down var(--load-time) ease-in;
+    animation-delay: 2s ;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.content-section .content .button{
+    margin-top: 30px;
+    animation: move-down var(--load-time) ease-in;
+    animation-delay: 3s ;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.content-section .content .button a{
+    background-color: #3d3d3d;
+    border-radius: 20px;
+    padding:12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+.content-section .social{
+  margin: 30px;
+  animation: move-right var(--load-time) ease-in;
+  animation-delay: 4s ;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+.content-section .social i{
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.content-section .social i:hover{
+    color: #3d3d3d;
+}
+
+/* Footer part */
+footer{
+    background-color: #000000ab; ; 
+    position: sticky;
+    top: 100vh;
+}
+
+footer .social{
+    text-align: center;
+    padding: 18px;
+}
+footer .copyright{
+    text-align: center;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+@keyframes move-down {
+    0%{
+      transform: translateY(-100px);
+      visibility: visible;
+    }
+    100%{
+      transform: translateY(0);
+      visibility: visible;
+    }
+}
+@keyframes move-right {
+    0%{
+      transform: translateX(-100px);
+      visibility: visible;
+    }
+    100%{
+      transform: translateX(0);
+      visibility: visible;
+    }
+}
+@keyframes zoom-in {
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100% {
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+/* For Responsive Design */
+@media  screen and (max-width: 1114px) {
+
+    /* Navigation Bar */
+    .navbar{
+        justify-content: space-between;
+        flex-direction: column;
+        background-color:#000000dc; 
+    }
+    .navbar .logo{
+        position: relative;
+        right: 30vw;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 17px;
+        top: 29px;
+    }
+    .navbar a{
+        border: none;
+    }
+    .navbar a:hover{
+        color: rgb(247, 211, 10);
+        background-color: transparent;
+        
+    }
+    .navlist{
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        padding: top 10px; 
+        display: none;
+        border: none;
+        padding-left: 0rem;
+    }
+    .navlist .listitems{
+        display: block;
+        border-top: 1px solid #fff;
+        padding: 20px 20px;
+    }
+    /* Main Section of About */
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    } 
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+    }
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .button{
+        text-align: center;
+        padding: 5px 18px;
+    }
+    .content-section .content .button a{
+        padding: 9px 30px;
+    }
+    .content-section .social{
+        text-align: center;
+    }
+
+/* Footer part */
+footer{
+    background-color: #000000dc; 
+    position: sticky;
+    top: 100vh;
+    width: 100%;
+
+}
+footer .copyright{
+    text-align: center;
+    font-size: 17px;
+    color: #e5e5f0;
+    margin-top: revert;
+}
+.active{
+    display: block;
+}
+}

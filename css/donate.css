@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 18px;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    background-color: #00000071; 
+}
+.navlist{
+    margin-bottom: 0rem;
+    
+}
+.navlist .listitems{
+    list-style-type: none;
+    display:inline-block ;
+    padding: 0px 20px;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 0px 12px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+.navbar a:hover{
+    color: rgb(10, 127, 196);
+    background-color: #fff;
+}
+.logo{
+    height: 65px;
+}
+.menu{
+    display: none;
+}
+.menuline{
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+/* Main Section of Donation Page  */
+body {
+    background-image:linear-gradient(rgba(10, 8, 8, 0.452),rgba(10, 8, 8, 0.452)), url("../img/img5.jpg");
+    background-size: cover;
+    background-position: center;
+    max-height: 100vh;
+    width: 100%;
+}
+.donation-page {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1.heading{
+    opacity: 0;
+    width: 100%;
+    color: rgb(235, 162, 6);
+    text-align: center;
+    font-weight: 700;
+    font-size: 38px;
+}
+.description {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description h3 {
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 0.026em;
+    font-size: 22px;
+    font-weight: 500;
+}
+.description h3 strong{
+    color: rgb(39, 144, 255);
+    font-size: 27px;
+}
+.form {
+    opacity: 3;
+    height: 60vh;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2rem 5rem 0 rgba(252, 162, 17, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+}
+.form>* {
+    width: 100%;
+}
+
+/* Footer part  */
+footer{
+    background-color: #00000098;
+    position: sticky;
+    top: 100vh;
+    width: 100%;
+
+}
+footer .social{
+    text-align: center;
+    padding: 9px;
+}
+footer .social a{
+    
+    font-size: 23px;
+    color: #e5e5f0;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 8px;
+    opacity: 0.75;
+}
+footer .social a:hover{
+    opacity: 1.5;
+}
+footer .copyright{
+    text-align: center;
+    font-size: 17px;
+    color: #e5e5f0;
+}
+
+/* For Responsive Design  */
+@media all and (max-width: 664px) {
+
+      /* Navigation Bar */
+    .navbar{
+        justify-content: space-between;
+        flex-direction: column;
+        background-color:#00000071; 
+    }
+    .navbar .logo{
+        position: relative;
+        right: 30vw;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 17px;
+        top: 29px;
+    }
+    .navbar a{
+        border: none;
+    }
+    .navbar a:hover{
+        color: rgb(247, 211, 10);
+        background-color: transparent;
+     }
+    .navlist{
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        padding: top 10px; 
+        display: none;
+        border: none;
+        padding-left: 0rem;
+    }
+    .navlist .listitems{
+        display: block;
+        border-top: 1px solid #fff;
+        padding: 20px 20px;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    /* toggle menu  */
+    .active{
+    display: block;
+    }
+}

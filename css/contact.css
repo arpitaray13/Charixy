@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 18px;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    background-color: #00000071; 
+}
+.navlist{
+    margin-bottom: 0rem;
+    
+}
+.navlist .listitems{
+    list-style-type: none;
+    display:inline-block ;
+    padding: 0px 20px;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 0px 12px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+.navbar a:hover{
+    color: rgb(10, 127, 196);
+    background-color: #fff;
+}
+.logo{
+    height: 65px;
+}
+.menu{
+    display: none;
+}
+.menuline{
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+/* Main Section of Contact Us */
+body{
+    background-image:linear-gradient(rgba(10, 8, 8, 0.62),rgba(10, 8, 8, 0.62)), url("../img/img6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:fit-content ;
+    width: 100%;
+    --load-time:300ms;
+}
+.contact{
+    position: relative;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+    animation: move-down var(--load-time) ease-in;
+    animation-delay: 1s ;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    animation: move-right var(--load-time) ease-in;
+    animation-delay: 2s ;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 32px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: rgb(21, 247, 171);
+}
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    animation: zoom-in var(--load-time) ease-in;
+    animation-delay: 3s ;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    
+    color: #e91e63;
+    font-size: 10px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.contactForm .inputBox input[type="submit"]:hover{
+    color: #15151cd9;
+    background-color: #79ecff;
+}
+
+/* Footer part */
+footer{
+    background-color: #000000ba;
+    position: sticky;
+    top: 100vh;
+}
+footer .social{
+    text-align: center;
+    padding: 18px;
+}
+footer .social a{
+    font-size: 23px;
+    color: #e5e5f0;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+    margin: -7px 8px;
+    opacity: 0.8;
+}
+footer .social a:hover{
+    opacity: 1.5;
+}
+footer .copyright{
+    text-align: center;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+@keyframes move-down {
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+@keyframes move-right {
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+@keyframes zoom-in {
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100% {
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+/* For Responsive Design */
+@media all and (max-width: 991px){
+    
+    /* Navigation Bar */
+    .navbar{
+        justify-content: space-between;
+        flex-direction: column;
+        background-color:#00000071; 
+    }
+    .navbar .logo{
+        position: relative;
+        right: 30vw;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 17px;
+        top: 29px;
+    }
+    .navbar a{
+        border: none;
+    }
+    .navbar a:hover{
+        color: rgb(247, 211, 10);
+        background-color: transparent;
+        
+    }
+    .navlist{
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        padding: top 10px; 
+        display: none;
+        border: none;
+        padding-left: 0rem;
+    }
+    .navlist .listitems{
+        display: block;
+        border-top: 1px solid #fff;
+        padding: 20px 20px;
+    }
+    /* Main Section Of Conatct Us */
+     .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+
+    /* toggle menu */
+    .active{
+        display: block;
+    }
+}

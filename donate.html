@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charixy|Donate</title>
+    <link rel="icon" href="./img/logotitle.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- google-font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/donate.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <img class="logo" src="./img/logo.png" alt="Charixy">
+            </div>
+            <ul class="navlist" id="navlist">
+                <li class="listitems">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="listitems">
+                    <a href="./about.html">About</a>
+                </li>
+                <li class="listitems">
+                    <a href="./donate.html">Donate</a>
+                </li>
+                <li class="listitems">
+                    <a href="./contact.html">Contact us</a>
+                </li>
+            </ul>
+            <div class="menu" id="togglebutton">
+                <div class="menuline"></div>
+                <div class="menuline"></div>
+                <div class="menuline"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="donation-page">
+        <div class="form">
+
+            <h1 class="heading">
+                <strong> GIVING IS THE GREATEST ACT OF GRACE. </strong>
+            </h1>
+
+            <div class="description">
+                <h3>
+                     Together we have the power to save lives and move from<br><strong>HUNGER to HOPE</strong> 
+                </h3>
+            </div>
+                
+            <form class="payment">
+                <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HhguG5tim7PhKb" async> </script>
+             </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/india.savethechildren"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/savethechildren_india/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/stc_india"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+        <p class="copyright">
+            Copyright &copy;
+            <script> document.write(new Date().getFullYear());</script>  Charixy Organization - All rights reserved
+        </p>
+    </footer>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" ></script>
+<script src="./js/donate.js"></script>
+<script src="./js/nav.js"></script>
+
+</html>
